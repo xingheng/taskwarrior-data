@@ -1,3 +1,6 @@
 time 1631811376
 new [description:"how to create a custom launchctl service by brew services" entry:"1631811376" modified:"1631811376" status:"pending" uuid:"b5f6625c-eb60-409d-a8c7-409e46f5162d"]
 ---
+time 1631811386
+new [description:"custom homebrew tap" entry:"1631811386" modified:"1631811386" status:"pending" uuid:"507d98fe-1288-4bd4-8942-8e6243305ef6"]
+---
