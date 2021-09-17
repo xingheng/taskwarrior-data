@@ -37,44 +37,15 @@ git config --bool branch.master.sync true
 git config --bool branch.master.syncNewFiles true
 ```
 
+> It doesn’t limit you have to use `master` branch for data sync, just make sure config it right and check it out once everything ready.
+
 
 
 #### Event Trigger
 
-When `task` command started, it will trigger the `on-launch-sync` hook script to check current git repository’s file status and break the `task` continue to run if something dirty found.
+When `task` command started, it will trigger the `on-launch-sync` hook script to check current git repository’s branch configuration and file status, break the `task` launch progress to run if something wrong or dirty found.
 
 When `task` command finished, it will trigger the `on-exit-sync` hook script to update the data file status, commit the task context info with a new custom message and call the external `git-sync` script to remote master branch’s upstream, of course save all the related operation outputs to log file `git-sync.log`.
-
-
-
-#### launchctl (unused, untested)
-
-`launchd` configuration file:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>logger</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/Users/hanwei/Documents/Projects/gitRepository/taskwarrior-data/git-sync</string>
-    </array>
-    <key>WatchPaths</key>
-    <array>
-        <string>/Users/hanwei/Documents/Projects/gitRepository/taskwarrior-data/data</string>
-    </array>
-</dict>
-</plist>
-```
-
-Load config file:
-
-```bash
-launchctl load ~/Library/LaunchAgents/willhan.taskwarrior.data.sync.plist
-```
 
 
 

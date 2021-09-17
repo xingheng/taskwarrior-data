@@ -21,8 +21,8 @@ SYNC_STATE=$(git -C "${GIT_REPO}" config --get --bool branch."$BRANCH_NAME".sync
 
 if [[ "true" != "${SYNC_STATE}" ]] ; then
     (
-    echo "Wrong branch for taskwarrior data sync."
-    echo "Setup the right branch configuration and check it out."
+    echo "Setup the right git-sync configuration and make sure you have checked out the target branch."
+    echo "Repo: ${GIT_REPO}"
     ) | tee -a "${LOG_FILE}"
     exit 1
 fi

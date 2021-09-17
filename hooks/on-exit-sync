@@ -8,14 +8,10 @@
 #   data:/path/to/taskwarrior/data/directory
 #   version:2.5.3
 #
-# Example stdin:
-#   {"description":"new-task-description","entry":"20210915T072256Z","modified":"20210915T143806Z","status":"pending","uuid":"7c07894f-f774-4858-af3f-ca60dd3508fd"}
-#
 
 COMMAND=$(echo "$2" | cut -f2- -d:)
 GIT_REPO=$(dirname "$(echo "$5" | cut -f2 -d:)")
 CONTEXT=""  # Command context info from task command.
-TASK="<None>"  # Current task descriptions, if exists.
 
 for i in "$@"; do
     CONTEXT="${CONTEXT}${i}\n"
@@ -23,14 +19,7 @@ done
 
 # Append more context info to commit message.
 CONTEXT="${CONTEXT}host:$(uname -n)\n"
-CONTEXT="${CONTEXT}date:$(date +%FT%T)\n"
-
-# Full task data with JSON format.
-while IFS= read -r DATA
-do
-    echo "$DATA" > /dev/null
-done < /dev/stdin
-
+CONTEXT="${CONTEXT}date:$(date +%FT%T)"
 LOG_FILE="${GIT_REPO}/git-sync.log"
 
 function _log() {
@@ -39,18 +28,7 @@ function _log() {
     echo -e "$1" >> "${LOG_FILE}"
 }
 
-if [[ -n "$DATA" ]]; then
-    if ! command -v jq > /dev/null; then
-        echo "jq is required"
-        exit 1
-    fi
-
-    # Read task description from JSON data.
-    TASK=$(echo "$DATA" | jq .description)
-fi
-
-_log "${CONTEXT}\nTask:\n${TASK}\n"
-
+_log "${CONTEXT}"
 
 # Prepare to check the git repo status and commit.
 
@@ -65,7 +43,8 @@ fi
 _log "Committing and pushing..."
 
 # Commit changes to git repository.
-git -C "${GIT_REPO}" commit -a -m "${COMMAND}" >/dev/null 2>&1
+MESSAGE=$(echo -e "${COMMAND}\n\n----------\n${CONTEXT}\n----------\n\nThis message is created by will's on-exit-sync script.")
+git -C "${GIT_REPO}" commit -a -m "${MESSAGE}" >/dev/null 2>&1
 
 # Now let's use git-sync in background.
 (cd "${GIT_REPO}" && sh git-sync) &>>"${LOG_FILE}" & disown
