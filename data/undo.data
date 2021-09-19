@@ -37,3 +37,7 @@ time 1632055241
 old [description:"write blog about taskwarrior" entry:"1632023520" modified:"1632055208" status:"pending" uuid:"16c55b1d-7db0-465a-a9f9-b2ad438ec324"]
 new [description:"write blog about taskwarrior" end:"1632055241" entry:"1632023520" modified:"1632055241" status:"completed" uuid:"16c55b1d-7db0-465a-a9f9-b2ad438ec324"]
 ---
+time 1632055251
+old [description:"custom asciinema asset in jekyll markdown" entry:"1632023312" modified:"1632023652" priority:"M" status:"pending" uuid:"4525341d-18c9-48e8-a8cf-abd1385fc9fd"]
+new [description:"custom asciinema asset in jekyll markdown" end:"1632055251" entry:"1632023312" modified:"1632055251" priority:"M" status:"completed" uuid:"4525341d-18c9-48e8-a8cf-abd1385fc9fd"]
+---
