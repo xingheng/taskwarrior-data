@@ -7,3 +7,6 @@ new [description:"custom homebrew tap" entry:"1631811386" modified:"1631811386" 
 time 1631811395
 new [description:"deploy taskwarrior-data repo to work machine" entry:"1631811395" modified:"1631811395" status:"pending" uuid:"44ab6a7b-75b8-4fbc-a92a-93dc887acf37"]
 ---
+time 1632023312
+new [description:"custom asciinema asset in jekyll markdown" entry:"1632023312" modified:"1632023312" status:"pending" uuid:"4525341d-18c9-48e8-a8cf-abd1385fc9fd"]
+---
