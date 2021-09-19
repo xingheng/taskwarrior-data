@@ -44,7 +44,3 @@ new [description:"custom asciinema asset in jekyll markdown" end:"1632055251" en
 time 1632058964
 new [description:"fix the objective-c code block highlight issue in jekyll" end:"1632058964" entry:"1632058964" modified:"1632058964" status:"completed" uuid:"bdb8101a-d7dd-4821-ae06-b09c2f10c8ad"]
 ---
-time 1632059452
-old [description:"custom homebrew tap" entry:"1631811386" modified:"1631811386" status:"pending" uuid:"507d98fe-1288-4bd4-8942-8e6243305ef6"]
-new [description:"custom homebrew tap" end:"1632059452" entry:"1631811386" modified:"1632059452" status:"completed" uuid:"507d98fe-1288-4bd4-8942-8e6243305ef6"]
----
