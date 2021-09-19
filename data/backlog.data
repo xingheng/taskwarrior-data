@@ -2,3 +2,4 @@
 {"description":"custom homebrew tap","entry":"20210916T165626Z","modified":"20210916T165626Z","status":"pending","uuid":"507d98fe-1288-4bd4-8942-8e6243305ef6"}
 {"description":"deploy taskwarrior-data repo to work machine","entry":"20210916T165635Z","modified":"20210916T165635Z","status":"pending","uuid":"44ab6a7b-75b8-4fbc-a92a-93dc887acf37"}
 {"description":"custom asciinema asset in jekyll markdown","entry":"20210919T034832Z","modified":"20210919T034832Z","status":"pending","uuid":"4525341d-18c9-48e8-a8cf-abd1385fc9fd"}
+{"description":"deploy taskwarrior-data repo to work machine","end":"20210919T034843Z","entry":"20210916T165635Z","modified":"20210919T034843Z","status":"completed","uuid":"44ab6a7b-75b8-4fbc-a92a-93dc887acf37"}
