@@ -44,3 +44,6 @@ new [description:"custom asciinema asset in jekyll markdown" end:"1632055251" en
 time 1632058964
 new [description:"fix the objective-c code block highlight issue in jekyll" end:"1632058964" entry:"1632058964" modified:"1632058964" status:"completed" uuid:"bdb8101a-d7dd-4821-ae06-b09c2f10c8ad"]
 ---
+time 1632207280
+new [description:"configure PF firewall rule" entry:"1632207280" modified:"1632207280" status:"pending" uuid:"e6e429ae-516f-4ed2-b65f-a3ec28e88fbf"]
+---

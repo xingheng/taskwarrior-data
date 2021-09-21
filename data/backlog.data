@@ -13,3 +13,4 @@
 {"description":"fix the objective-c code block highlight issue in jekyll","end":"20210919T134244Z","entry":"20210919T134244Z","modified":"20210919T134244Z","status":"completed","uuid":"bdb8101a-d7dd-4821-ae06-b09c2f10c8ad"}
 {"description":"custom homebrew tap","end":"20210919T135052Z","entry":"20210916T165626Z","modified":"20210919T135052Z","status":"completed","uuid":"507d98fe-1288-4bd4-8942-8e6243305ef6"}
 {"description":"custom homebrew tap","entry":"20210916T165626Z","modified":"20210916T165626Z","status":"pending","uuid":"507d98fe-1288-4bd4-8942-8e6243305ef6"}
+{"description":"configure PF firewall rule","entry":"20210921T065440Z","modified":"20210921T065440Z","status":"pending","uuid":"e6e429ae-516f-4ed2-b65f-a3ec28e88fbf"}
