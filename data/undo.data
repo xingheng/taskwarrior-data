@@ -50,3 +50,7 @@ new [description:"configure PF firewall rule" entry:"1632207280" modified:"16322
 time 1632279695
 new [description:"send notification when git-sync failed" entry:"1632279695" modified:"1632279695" project:"taskwarrior-data" status:"pending" uuid:"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"]
 ---
+time 1632279718
+old [description:"send notification when git-sync failed" entry:"1632279695" modified:"1632279695" project:"taskwarrior-data" status:"pending" uuid:"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"]
+new [description:"send notification when git-sync failed" entry:"1632279695" modified:"1632279718" project:"taskwarrior" status:"pending" uuid:"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"]
+---
