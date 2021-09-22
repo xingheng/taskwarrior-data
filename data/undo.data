@@ -57,3 +57,6 @@ new [description:"send notification when git-sync failed" entry:"1632279695" mod
 time 1632280118
 new [description:"fix the conflict import level issue" entry:"1632280118" modified:"1632280118" project:"code-analyzer" status:"pending" tags:"bug" uuid:"36420ab1-8773-415f-8aec-f043cfcd5e16"]
 ---
+time 1632299902
+new [description:"merge the header imports' changes" entry:"1632299902" modified:"1632299902" status:"pending" uuid:"8253d704-39ea-48aa-915a-17bc16047e3e"]
+---
