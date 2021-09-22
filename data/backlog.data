@@ -16,3 +16,4 @@
 {"description":"configure PF firewall rule","entry":"20210921T065440Z","modified":"20210921T065440Z","status":"pending","uuid":"e6e429ae-516f-4ed2-b65f-a3ec28e88fbf"}
 {"description":"send notification when git-sync failed","entry":"20210922T030135Z","modified":"20210922T030135Z","project":"taskwarrior-data","status":"pending","uuid":"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"}
 {"description":"send notification when git-sync failed","entry":"20210922T030135Z","modified":"20210922T030158Z","project":"taskwarrior","status":"pending","uuid":"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"}
+{"description":"fix the conflict import level issue","entry":"20210922T030838Z","modified":"20210922T030838Z","project":"code-analyzer","status":"pending","tags":["bug"],"uuid":"36420ab1-8773-415f-8aec-f043cfcd5e16"}

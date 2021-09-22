@@ -2,3 +2,4 @@
 [description:"custom homebrew tap" entry:"1631811386" modified:"1631811386" status:"pending" uuid:"507d98fe-1288-4bd4-8942-8e6243305ef6"]
 [description:"configure PF firewall rule" entry:"1632207280" modified:"1632207280" status:"pending" uuid:"e6e429ae-516f-4ed2-b65f-a3ec28e88fbf"]
 [description:"send notification when git-sync failed" entry:"1632279695" modified:"1632279718" project:"taskwarrior" status:"pending" uuid:"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"]
+[description:"fix the conflict import level issue" entry:"1632280118" modified:"1632280118" project:"code-analyzer" status:"pending" tags:"bug" uuid:"36420ab1-8773-415f-8aec-f043cfcd5e16"]
