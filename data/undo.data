@@ -47,3 +47,6 @@ new [description:"fix the objective-c code block highlight issue in jekyll" end:
 time 1632207280
 new [description:"configure PF firewall rule" entry:"1632207280" modified:"1632207280" status:"pending" uuid:"e6e429ae-516f-4ed2-b65f-a3ec28e88fbf"]
 ---
+time 1632279695
+new [description:"send notification when git-sync failed" entry:"1632279695" modified:"1632279695" project:"taskwarrior-data" status:"pending" uuid:"57f5e9ad-d45e-4c21-b8ac-0e560e160e14"]
+---
