@@ -1,10 +1,24 @@
 #!/usr/bin/env bash
 
+set -x
+
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+ROOTPATH=$(dirname "$SCRIPTPATH")
+
+source "${ROOTPATH}/common.sh"
+
 TASKWARRIOR_DATA_PATH=$(echo "$5" | cut -f2 -d:)
 GIT_REPO=$(dirname "${TASKWARRIOR_DATA_PATH}")
 LOG_FILE="${GIT_REPO}/git-sync.log"
 
 echo -e "\n---------- $(date +%FT%T) ----------" >> "${LOG_FILE}"
+
+echo "SCRIPT: $SCRIPT"
+echo "SCRIPTPATH: $SCRIPTPATH"
+echo "ROOTPATH: $ROOTPATH"
+
+exit 1
 
 # git-sync runs a long time, so replace it with a simple branch setting check below.
 # SYNC_STATE=$(cd "${GIT_REPO}" && sh git-sync)
