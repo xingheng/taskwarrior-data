@@ -1,3 +1,9 @@
+## Legacy
+
+***This repository is designed for `taskwarrior` 2.x only, DO NOT using it for `taskwarrior` 3.x since it has been upgraded to sqlite database file for data storage.***
+
+
+
 ## Taskwarrior Data
 
 This repository is a template project for hosting [taskwarrior](https://taskwarrior.org/) data with [git-sync](https://github.com/simonthum/git-sync) script to deploy it on all of my working systems.
