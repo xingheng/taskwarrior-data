@@ -47,4 +47,4 @@ MESSAGE=$(echo -e "${COMMAND}\n\n----------\n${CONTEXT}\n----------\n\nThis mess
 git -C "${GIT_REPO}" commit -a -m "${MESSAGE}" >/dev/null 2>&1
 
 # Now let's use git-sync in background.
-(cd "${GIT_REPO}" && sh git-sync) &>>"${LOG_FILE}" & disown
+(cd "${GIT_REPO}" && bash git-sync) &>>"${LOG_FILE}" & disown
