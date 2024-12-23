@@ -42,8 +42,14 @@ This repository is a template project for hosting [taskwarrior](https://taskwarr
 
     ```bash
     git remote add mine git@github.com:your-name/taskwarrior-data.git
+    
+    # If the remote exists already:
     git fetch mine
     git checkout --track mine/master
+    
+    # If the remote doesn't exist:
+    git checkout -b master
+    git push -u mine master
     ```
 
 3. Configure it for `git-sync`.
@@ -57,7 +63,7 @@ This repository is a template project for hosting [taskwarrior](https://taskwarr
 
 4. Configure the data storage for `taskwarrior`.
 
-    `taskwarrior` uses the `~/.task` directory as default data storage as [its docs](https://taskwarrior.org/docs/introduction.html) said, so you need rewrite the `TASKDATA` environment variable to new path in `~/.taskrc` file or move the current *taskwarrior-data* directory to the default path, migrate the existing data to *taskwarrior-data/data* directory if necessary.
+    `taskwarrior` uses the `~/.task` directory as default data storage as [its docs](https://taskwarrior.org/docs/introduction.html) said, so you need rewrite the `TASKDATA` environment variable to new path in `~/.taskrc` file or move the current ***taskwarrior-data*** directory to the default path, migrate the existing data to *taskwarrior-data/data* directory if necessary.
 
 
 
