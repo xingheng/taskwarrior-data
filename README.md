@@ -23,12 +23,14 @@ This repository is a template project for hosting [taskwarrior](https://taskwarr
 │   ├── pending.data
 │   └── undo.data
 ├── git-sync                             # core script from `git-sync`
-├── git-sync-on-inotify                  # core script from `git-sync`
-└── hooks                                # taskwarrior hooks
-    ├── on-exit-sync
-    └── on-launch-sync
+├── git-sync-on-inotify                  # core script from `git-sync` (Linux only)
+├── hooks                                # taskwarrior hooks
+│   ├── on-exit-sync
+│   └── on-launch-sync
+└── launchd                              # macOS launchd plist
+    └── com.taskwarrior.gitsync.plist
 
-3 directories, 10 files
+4 directories, 11 files
 ```
 
 
@@ -73,6 +75,8 @@ This repository is a template project for hosting [taskwarrior](https://taskwarr
 When `task` command started, it will trigger the `on-launch-sync` hook script to check current git repository’s branch configuration and file status, break the `task` launch progress to run if something wrong or dirty found.
 
 When `task` command finished, it will trigger the `on-exit-sync` hook script to update the data file status, commit the task context info with a new custom message and call the external `git-sync` script to remote master branch’s upstream, of course save all the related operation outputs to log file `git-sync.log`.
+
+`git-sync` script may get failed sometimes, e.g. bad network issues when pushing, so here is the `launchd/com.taskwarrior.gitsync.plist` for macOS. It's optional but recommended.
 
 
 
